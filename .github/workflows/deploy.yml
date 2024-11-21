@@ -3,7 +3,7 @@ name: Deploy VitePress Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # 确保是您的默认分支名称，例如 main 或 master
+      - main  # 设置为你使用的默认分支，可能是 master 或 main
 
 jobs:
   build-and-deploy:
@@ -15,19 +15,20 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '22'  # 使用与本地相同的 Node.js 版本
+        node-version: '22'  # 选择适合你项目的 Node.js 版本
 
     - name: Install Dependencies
       run: npm install
 
-    - name: Verify VitePress Installation
-      run: npx vitepress --version  # 检查 VitePress 是否安装成功
-
-    - name: Build VitePress Site
-      run: npx vitepress build  # 构建静态文件
+    - name: Build
+      run: npx vitepress build
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/.vitepress/dist
+    - name: List output files
+      run: ls -R ./.vitepress/dist
+
+
