@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
-  base: '/aniian91.github.io/',
+  base: '/',
   title: "ANIIAN'S DIARY", // 网站标题
   description: "Record the learning of relevant deep learning, Linux, shell, etc.", // 网站描述
 
