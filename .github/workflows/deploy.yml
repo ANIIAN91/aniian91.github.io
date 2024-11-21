@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v2
       with:
-        node-version: '22'  # 选择适合你项目的 Node.js 版本
+        node-version: '14'  # 选择适合你项目的 Node.js 版本
 
     - name: Install Dependencies
       run: npm install
