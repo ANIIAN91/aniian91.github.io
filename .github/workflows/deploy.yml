@@ -10,15 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3  # 使用最新版本
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3  # 使用最新版本
+      uses: actions/setup-node@v3
       with:
-        node-version: '16'  # 选择稳定的 Node.js 版本（推荐使用 16 或 18）
+        node-version: '16'
 
     - name: Install Dependencies
       run: npm install
+
+    - name: Fix VitePress Permissions
+      run: chmod +x ./node_modules/.bin/vitepress
+
+    - name: Check VitePress Installation
+      run: npx vitepress --version
 
     - name: Build VitePress Site
       run: npx vitepress build
@@ -27,4 +33,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/.vitepress/dist  # 确保路径正确
+        publish_dir: ./docs/.vitepress/dist
