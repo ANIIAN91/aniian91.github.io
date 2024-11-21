@@ -3,7 +3,7 @@ name: Deploy VitePress Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # 确保是您的默认分支
+      - main
 
 jobs:
   build-and-deploy:
@@ -15,13 +15,10 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '22'  # 使用本地一致的 Node.js 版本
+        node-version: '22'
 
     - name: Install Dependencies
       run: npm install
-
-    - name: Fix Permissions for VitePress
-      run: chmod +x ./node_modules/.bin/vitepress
 
     - name: Verify VitePress Installation
       run: npx vitepress --version
