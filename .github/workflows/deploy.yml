@@ -15,19 +15,16 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '22'  # 使用与本地相同的 Node.js 版本
 
     - name: Install Dependencies
       run: npm install
 
-    - name: Fix VitePress Permissions
-      run: chmod +x ./node_modules/.bin/vitepress
-
-    - name: Check VitePress Installation
-      run: npx vitepress --version
+    - name: Verify VitePress Installation
+      run: npx vitepress --version  # 检查 VitePress 是否安装成功
 
     - name: Build VitePress Site
-      run: npx vitepress build
+      run: npx vitepress build  # 构建静态文件
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
