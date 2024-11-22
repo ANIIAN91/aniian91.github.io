@@ -1,0 +1,5 @@
+import{_ as a,c as s,o as e,R as n}from"./chunks/framework.C6kDZlj-.js";const u=JSON.parse('{"title":"模 型","description":"","frontmatter":{},"headers":[],"relativePath":"model/index.md","filePath":"model/index.md","lastUpdated":1732279781000}'),t={name:"model/index.md"},p=n(`<h1 id="模-型" tabindex="-1">模 型 <a class="header-anchor" href="#模-型" aria-label="Permalink to &quot;模 型&quot;">​</a></h1><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>1. 该模型的结构</span></span>
+<span class="line"><span>2. 该模型实现的过程（图文动画）</span></span>
+<span class="line"><span>3. 该模型的详细架构图</span></span>
+<span class="line"><span>4. 该模型的前世今生（谁创造的，为什么创造的）</span></span>
+<span class="line"><span>5. 该模型之前的用处和现在的用处</span></span></code></pre></div>`,2),i=[p];function o(l,c,d,r,_,h){return e(),s("div",null,i)}const f=a(t,[["render",o]]);export{u as __pageData,f as default};
