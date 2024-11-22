@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.b7df2832.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"understanding/chapter12.md"}'),r={name:"understanding/chapter12.md"};function n(c,s,o,p,d,i){return a(),t("div")}const f=e(r,[["render",n]]);export{m as __pageData,f as default};
