@@ -9,17 +9,22 @@ export default defineConfig({
   themeConfig: {
     // 主题级选项
     nav: [
-      { text: '首页', link: '/index' }, // 对应 docs/about.md
-      { text: "Linux", link: "/linux/" },    // 对应 docs/linux/index.md
-      { text: "Shell", link: "/shell/" },     // 对应 docs/shell/index.md
-      { text: "学习生活", link: "/learn-life/" }, // 对应 docs/learn-life/index.md
-      { text: "认识算法", link: "/algorithm/" }, // 对应 docs/algorithm/index.md
-      { text: "认识模型", link: "/model/" }, // 对应 docs/model/index.md
-      { text: "读论文", link: "/paper/" }, // 对应 docs/paper/index.md
-      { text: "理解深度学习", link: "/understanding/" }, // 对应 docs/understanding/index.md
+      { text: '首页', link: '/index' },
+      { text: "Linux", link: "/linux/" },
+      { text: "Shell", link: "/shell/" },
+      { text: "学习生活", link: "/learn-life/" },
+      { text: "认识算法", link: "/algorithm/" },
+      { text: "认识模型", link: "/model/" },
+      { text: "读论文", link: "/paper/" },
+      { text: "理解深度学习", link: "/understanding/" },
     ],
-    pageNav: true,  // 启用"上一页"和"下一页"功能
-    returnHome: true,  // 启用"返回首页"按钮
-    sidebarCollapsible: true,
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    pageNav: true,  // 启用上一页和下一页功能
+    returnHome: true,  // 启用返回首页按钮
+    sidebarCollapsible: true,  // 启用侧边栏折叠
+    lastUpdated: true,
   },
 })
