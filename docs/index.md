@@ -4,6 +4,6 @@
 [理解深度学习](./understanding/index)  
 [读论文](./paper/index)  
 [认识模型](./model/index)  
-[深度学习](./depp-learning/index)  
+[深度学习](./learn-life/index)  
 [Linux](./linux/index)  
 [Shell](./shell/index)  
