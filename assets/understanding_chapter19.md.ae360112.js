@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.66a0bf9c.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"understanding/chapter19.md"}'),r={name:"understanding/chapter19.md"};function n(c,s,o,p,d,i){return a(),t("div")}const f=e(r,[["render",n]]);export{m as __pageData,f as default};
