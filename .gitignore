@@ -8,11 +8,14 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Ignore dist folders generally
-dist/
-dist-ssr/
+dist
+dist-ssr
+node_modules
+/.vitepress
 
-# But do not ignore .vitepress/dist
-!.vitepress/dist/
+# # But do not ignore .vitepress/dist
+# !.vitepress/dist/
+!docs/.vitepress/
 
 *.local
 
