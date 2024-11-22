@@ -7,7 +7,3 @@
 [深度学习](./depp-learning/index)  
 [Linux](./linux/index)  
 [Shell](./shell/index)  
-
-```
-1 2
-```
