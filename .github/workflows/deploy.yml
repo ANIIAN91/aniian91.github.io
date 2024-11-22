@@ -19,6 +19,12 @@ jobs:
       with:
         node-version: '22'
 
+    # 安装指定版本的 VitePress 和 Markdown-it MathJax
+    - name: Install specific packages
+      run: |
+        npm install vitepress@1.0.0-rc.31
+        npm add -D markdown-it-mathjax3
+
     # 安装项目依赖
     - name: Install Dependencies
       run: npm ci
