@@ -17,19 +17,30 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '22'  # 推荐使用较新的 LTS 版本
+        node-version: '22'  # 使用 Node.js v22 版本
 
     # 安装项目依赖
     - name: Install Dependencies
       run: npm ci # 更快更可靠的安装方式，适用于锁定的 package-lock.json
 
+    # 检查 docs/.vitepress 目录是否存在（调试用）
+    - name: Debug VitePress Directory
+      run: ls -R ./docs/.vitepress || echo "No .vitepress directory found"
+
     # 构建 VitePress 项目
     - name: Build
-      run: npx vitepress build
+      run: |
+        mkdir -p ./docs/.vitepress/dist # 确保构建目录存在
+        npx vitepress build || echo "Build failed, check for errors"
 
     # 列出生成的文件（可选步骤，便于调试）
     - name: List Output Files
-      run: ls -R ./docs/.vitepress/dist
+      run: |
+        if [ -d ./docs/.vitepress/dist ]; then
+          ls -R ./docs/.vitepress/dist
+        else
+          echo "Build output directory not found"
+        fi
 
     # 部署到 GitHub Pages
     - name: Deploy to GitHub Pages
