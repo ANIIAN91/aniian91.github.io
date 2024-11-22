@@ -15,7 +15,7 @@ export default defineConfig({
         items: [
           { text: "Linux", link: "/linux/" },    // 对应 docs/linux/index.md
           { text: "Shell", link: "/shell/" },     // 对应 docs/shell/index.md
-          { text: "深度学习", link: "/depp-learning/" }, // 对应 docs/deep-learning/index.md
+          { text: "学习生活", link: "/learn-life/" }, // 对应 docs/deep-learning/index.md
         ]
       }
     ],
