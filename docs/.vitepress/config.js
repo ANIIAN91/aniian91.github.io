@@ -20,5 +20,6 @@ export default defineConfig({
     ],
     pageNav: true,  // 启用"上一页"和"下一页"功能
     returnHome: true,  // 启用"返回首页"按钮
+    sidebarCollapsible: true,
   },
 })
