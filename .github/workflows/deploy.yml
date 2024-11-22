@@ -3,32 +3,37 @@ name: Deploy VitePress Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # 设置为你使用的默认分支，可能是 master 或 main
+      - main  # 设置为你使用的默认分支，可以根据实际情况调整
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+    # 检出代码仓库
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    # 设置 Node.js 环境
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'  # 选择适合你项目的 Node.js 版本
+        node-version: '16'  # 推荐使用较新的 LTS 版本
 
+    # 安装项目依赖
     - name: Install Dependencies
-      run: npm install
+      run: npm ci # 更快更可靠的安装方式，适用于锁定的 package-lock.json
 
+    # 构建 VitePress 项目
     - name: Build
       run: npx vitepress build
 
+    # 列出生成的文件（可选步骤，便于调试）
+    - name: List Output Files
+      run: ls -R ./docs/.vitepress/dist
+
+    # 部署到 GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: /root/docs/.vitepress/dist
-    - name: List output files
-      run: ls -R ./.vitepress/dist
-
-
+        publish_dir: ./docs/.vitepress/dist # 确保路径与构建输出一致
