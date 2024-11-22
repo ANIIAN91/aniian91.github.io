@@ -31,7 +31,7 @@ jobs:
     - name: Build
       run: |
         mkdir -p ./docs/.vitepress/dist # 确保构建目录存在
-        npx vitepress build || echo "Build failed, check for errors"
+        npm run build || echo "Build failed, check for errors"
 
     # 列出生成的文件（可选步骤，便于调试）
     - name: List Output Files
