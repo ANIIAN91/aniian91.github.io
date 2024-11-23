@@ -1,7 +1,7 @@
-# **采菊东篱下，悠然见南山**
+**<span style="color: #4CAF50; font-size: 24px; font-weight: bold;">采菊东篱下，悠然见南山</span>**
 
-
-[Earthworm](https://julebu.co/)     
-[Follow](https://app.follow.is/feeds/all/pending?view=0)        
-[CCF](https://passport.ccf.org.cn/sso/platform?_access_code=b34a144c6fd94a4184b3c4296ee5ff94)
-test
+<div style="text-align: center; margin: 20px 0; padding: 10px; background-color: rgba(249, 249, 249, 0); border-radius: 8px;">
+    <a href="https://julebu.co/" target="_blank" style="font-size: 22px; color: #4CAF50; text-decoration: none; margin: 10px; transition: color 0.3s;">🌍 Earthworm</a>     
+    <a href="https://app.follow.is/feeds/all/pending?view=0" target="_blank" style="font-size: 22px; color: #2196F3; text-decoration: none; margin: 10px; transition: color 0.3s;">🔗 Follow</a>        
+    <a href="https://passport.ccf.org.cn/sso/platform?_access_code=b34a144c6fd94a4184b3c4296ee5ff94" target="_blank" style="font-size: 22px; color: #FF5722; text-decoration: none; margin: 10px; transition: color 0.3s;">📚 CCF</a>
+</div>

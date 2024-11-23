@@ -87,4 +87,7 @@
 [**鲁棒性（Robustness）**](20241108.md)
 
 ## 20241121
-vitepress本地配置完成，GitHub Page未完成
+vitepress本地配置完成，GitHub Pages未完成
+
+## 20241122
+GitHub Pages配置完成
