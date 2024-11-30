@@ -116,7 +116,6 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/index' },
       { text: "Linux", link: "/linux/" },
-      { text: "Shell", link: "/shell/" },
       { text: "学习生活", link: "/learn-life/" },
       { text: "认识算法", link: "/algorithm/" },
       { text: "认识模型", link: "/model/" },
