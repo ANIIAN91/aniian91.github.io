@@ -127,4 +127,9 @@ export default defineConfig({
     },
 
   },
+  buildEnd() {
+    const cnamePath = resolve(__dirname, './dist/CNAME');
+    writeFileSync(cnamePath, 'www.aniian.site');
+    console.log('CNAME file has been created at:', cnamePath);
+  }
 })
