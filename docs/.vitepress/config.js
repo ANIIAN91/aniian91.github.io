@@ -115,11 +115,10 @@ export default defineConfig({
     // 主题级选项
     nav: [
       { text: '首页', link: '/index' },
-      { text: "Linux", link: "/linux/" },
-      { text: "学习生活", link: "/learn-life/" },
-      { text: "认识算法", link: "/algorithm/" },
-      { text: "认识模型", link: "/model/" },
-      { text: "读论文", link: "/paper/" },
+      { text: "生活", link: "/learn-life/" },
+      { text: "算法", link: "/algorithm/" },
+      { text: "模型", link: "/model/" },
+      { text: "论文", link: "/paper/" },
       { text: "理解深度学习", link: "/understanding/" },
     ],
     docFooter: {
