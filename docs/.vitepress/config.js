@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { writeFileSync } from 'fs';
+import { resolve } from 'path'; // 确保引入 resolve
 import mathjax3 from 'markdown-it-mathjax3'
 const customElements = [
   'math',
