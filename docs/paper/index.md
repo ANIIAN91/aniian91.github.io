@@ -11,3 +11,6 @@
 - [光谱技术在农业中的应用](光谱技术在农业中的应用.md)
 - [磁力搅拌-电感耦合等离子体发射光谱测定石灰性土壤中交换性盐基](磁力搅拌-电感耦合等离子体发射光谱测定石灰性土壤中交换性盐基.md)
 - [Comparison of Object Detection Algorithms for Livestock Monitoring of Sheep in UAV images](<Comparison of Object Detection Algorithms for Livestock Monitoring of Sheep in UAV images.md>)
+- [EfficientDet for Fabric Defect Detection Based on Edge Computing](<EfficientDet for Fabric Defect Detection Based on Edge Computing.md>)
+- [基于便携式X射线荧光光谱速测的设施菜地土壤重金属污染诊断与评价](基于便携式X射线荧光光谱速测的设施菜地土壤重金属污染诊断与评价.md)
+- [Fast EfficientDet An Efficient Pedestrian Detection Network](<Fast EfficientDet An Efficient Pedestrian Detection Network.md>)
