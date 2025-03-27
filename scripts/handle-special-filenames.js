@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import glob from 'glob'
+import { glob } from 'glob'  // 修改这行，使用命名导入而不是默认导入
 
 // 获取当前文件的目录名
 const __filename = fileURLToPath(import.meta.url)
@@ -14,7 +14,7 @@ async function handleSpecialFilenames() {
   console.log('处理特殊文件名...')
   
   // 查找所有包含空格的Markdown文件
-  const files = await glob.glob('**/*.md', { 
+  const files = await glob('**/*.md', { 
     cwd: DOCS_DIR, 
     nodir: true,
     ignore: ['node_modules/**', '.vitepress/**']
