@@ -1,0 +1,18 @@
+/* 将侧边栏移动到左边 */
+.theme-default-content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  /* 调整侧边栏宽度并使其可折叠 */
+  .sidebar {
+    width: 250px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+  }
+  
+  /* 定义折叠的行为 */
+  .sidebar.collapsed {
+    width: 0;
+    display: none;
+  }

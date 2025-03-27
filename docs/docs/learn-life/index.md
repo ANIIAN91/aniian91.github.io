@@ -1,0 +1,5 @@
+- [11月总结](20241200.md)  
+- [考试总结](school2.md)
+- [安装 VitePress](20241121.md)    
+- [部署 GitHub Pages](20241122.md)   
+- [Nginx-Proxy-Manager 502 Bad Gateway](20241123.md) 
