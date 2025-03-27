@@ -27,18 +27,21 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm' # Enable caching for npm dependencies
-          # cache-dependency-path defaults to package-lock.json at root, which is now correct
+          # IMPORTANT: Point cache to the lock file INSIDE 'docs'
+          cache-dependency-path: 'docs/package-lock.json'
 
       # 3. 安装项目依赖 (using npm ci for consistency)
-      #    No working-directory needed, as package.json is at the root
+      #    IMPORTANT: Specify the working directory where package.json is located
       - name: Install Dependencies
+        working-directory: ./docs # <--- 告诉 npm 在 docs 文件夹里运行
         run: npm ci
 
       # 4. 构建 VitePress 项目
-      #    Verify 'docs:build' is the correct script name in your package.json
-      #    No working-directory needed
+      #    Verify 'docs:build' is the correct script name in your docs/package.json
+      #    IMPORTANT: Specify the working directory
       - name: Build
-        run: npm run docs:build # <-- Use the standard vitepress build script name (or your actual script name)
+        working-directory: ./docs # <--- 告诉 npm 在 docs 文件夹里运行
+        run: npm run docs:build # <-- Use the standard vitepress build script name (or your actual script name in docs/package.json)
 
       # 5. 配置 GitHub Pages
       - name: Setup Pages
@@ -48,8 +51,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the default VitePress build output directory relative to root
-          path: ./.vitepress/dist # <--- Path relative to repository root
+          # Upload the build output directory (relative to repository root)
+          path: ./docs/.vitepress/dist # <--- 构建输出在 docs 文件夹内
 
       # 7. 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
