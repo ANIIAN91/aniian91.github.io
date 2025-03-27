@@ -3,58 +3,47 @@ name: Deploy VitePress Site to GitHub Pages
 on:
   push:
     branches:
-      - main # Deploy only when pushing to the main branch
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+      - [main]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. 检出代码仓库
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Fetches all history for git info like last updated time
+    # 检出代码仓库
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-      # 2. 设置 Node.js 环境 (matching your local v22)
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'npm' # Enable caching for npm dependencies
-          # IMPORTANT: Point cache to the lock file INSIDE 'docs'
-          cache-dependency-path: 'docs/package-lock.json'
+    # 设置 Node.js 环境
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      working-directory: ./docs
+      with:
+        node-version: '22'
 
-      # 3. 安装项目依赖 (using npm ci for consistency)
-      #    IMPORTANT: Specify the working directory where package.json is located
-      - name: Install Dependencies
-        working-directory: ./docs # <--- 告诉 npm 在 docs 文件夹里运行
-        run: npm ci
+    # 安装指定版本的 VitePress 和 Markdown-it MathJax
+    - name: Install specific packages
+      working-directory: ./docs
+      run: |
+        npm install vitepress@1.0.0-rc.31
+        npm add -D markdown-it-mathjax3
 
-      # 4. 构建 VitePress 项目
-      #    Verify 'docs:build' is the correct script name in your docs/package.json
-      #    IMPORTANT: Specify the working directory
-      - name: Build
-        working-directory: ./docs # <--- 告诉 npm 在 docs 文件夹里运行
-        run: npm run docs:build # <-- Use the standard vitepress build script name (or your actual script name in docs/package.json)
+    # 安装项目依赖
+    - name: Install Dependencies
+      working-directory: ./docs
+      run: npm ci
 
-      # 5. 配置 GitHub Pages
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+    # 检查 docs/.vitepress 目录是否存在（调试用）
+    - name: Debug VitePress Directory
+      run: ls -R ./docs/docs/.vitepress || echo "No .vitepress directory found"
 
-      # 6. 上传构建产物
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload the build output directory (relative to repository root)
-          path: ./docs/.vitepress/dist # <--- 构建输出在 docs 文件夹内
+    # 构建 VitePress 项目
+    - name: Build
+      working-directory: ./docs
+      run: npm run build
 
-      # 7. 部署到 GitHub Pages
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    # 部署到 GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/docs/.vitepress/dist
