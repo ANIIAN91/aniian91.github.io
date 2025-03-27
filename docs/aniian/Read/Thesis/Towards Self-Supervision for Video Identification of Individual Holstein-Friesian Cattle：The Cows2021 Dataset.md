@@ -1,6 +1,6 @@
 - [[2105.01938] Towards Self-Supervision for Video Identification of Individual Holstein-Friesian Cattle: The Cows2021 Dataset](https://arxiv.org/abs/2105.01938)
 - [Cows2021 Dataset - Datasets - data.bris](https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7)
-- [[2105.01938v1.pdf]]
+- 2105.01938v1.pdf})
 
 **论文总结**
 *   **英文标题：** Towards Self-Supervision for Video Identification of Individual Holstein-Friesian Cattle: The Cows2021 Dataset

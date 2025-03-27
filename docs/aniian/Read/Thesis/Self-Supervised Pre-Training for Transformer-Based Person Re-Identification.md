@@ -1,5 +1,5 @@
 [arxiv.org/pdf/2111.12084](https://arxiv.org/pdf/2111.12084)
-[[2111.12084v1.pdf]]
+2111.12084v1.pdf})
 
 *   **英文标题：** Self-Supervised Pre-Training for Transformer-Based Person Re-Identification
 *   **中文标题：** 基于Transformer的行人重识别的自监督预训练

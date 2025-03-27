@@ -1,5 +1,5 @@
 - [[2012.12877] Training data-efficient image transformers & distillation through attention](https://arxiv.org/abs/2012.12877)
-- [[../../docs/2012.12877v2.pdf]]
+- ../../docs/2012.12877v2.pdf})
 
 
 **1. 英文标题:** Training data-efficient image transformers & distillation through attention

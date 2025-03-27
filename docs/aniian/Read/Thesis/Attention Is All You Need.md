@@ -1,5 +1,5 @@
 - [[1706.03762] Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-- [[1706.03762v7.pdf]]
+- 1706.03762v7.pdf})
 
 *   **英文标题:** Attention Is All You Need
 *   **中文标题:** 注意力机制就是你所需要的一切

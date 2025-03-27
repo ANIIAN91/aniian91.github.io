@@ -14,7 +14,7 @@
     *   `h` 和 `w`：通常，在多头注意力语境下， `h` 一般代表 **head** 的数量，而 `w` 不太常见，可能在特定场景下具有特定含义。  在这里，我们假设你想问的是 **序列长度** `N`。  在图像处理中，序列长度 `N` 通常是 patch 的数量，即 `N = (H/P) * (W/P)`。
     *   `C`： 这里指的`C`代表的是`D`，也就是embedding dimension。
     *   `M`：`M` 一般代表 batch size
-![[../docs/Pasted image 20250320104445.png]]
+!../docs/Pasted image 20250320104445.png})
 **因此，在进入多头自注意力之前，我们得到了以下数据：**
 *   `N = (H/P) * (W/P)`：序列长度 (patch 的数量)。
 *   `D`：Embedding dimension (每个 patch 映射到的向量维度)。

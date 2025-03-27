@@ -1,7 +1,7 @@
 - 论文链接：[https://arxiv.org/abs/2305.07027](https://arxiv.org/abs/2305.07027)
 - 论文项目：[https://github.com/microsoft/Cream/tree/main/EfficientViT](https://github.com/microsoft/Cream/tree/main/EfficientViT)
 - [CVPR 2023 | EfficientViT: Memory Efficient Vision Transformer with Cascaded Group Attention-CSDN博客](https://blog.csdn.net/P_LarT/article/details/130687567)
-- [[2305.07027v1.pdf]]
+- 2305.07027v1.pdf})
 
 *   **英文标题:** EfficientViT: Memory Efficient Vision Transformer with Cascaded Group Attention
 *   **中文标题:** EfficientViT：具有级联分组注意力的内存高效视觉Transformer

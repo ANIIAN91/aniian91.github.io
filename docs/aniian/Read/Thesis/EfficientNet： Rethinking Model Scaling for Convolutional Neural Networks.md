@@ -1,5 +1,5 @@
 [arxiv.org/pdf/1905.11946](https://arxiv.org/pdf/1905.11946)
-[[1905.11946v5.pdf]]
+1905.11946v5.pdf})
 
 *   **英文标题:** EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks
 *   **中文标题:** EfficientNet：重新思考卷积神经网络的模型缩放

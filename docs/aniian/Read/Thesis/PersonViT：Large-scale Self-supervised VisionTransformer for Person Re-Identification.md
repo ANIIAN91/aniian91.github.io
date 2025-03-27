@@ -1,4 +1,4 @@
-[[../../docs/2408.05398v1.pdf]]
+../../docs/2408.05398v1.pdf})
 https://arxiv.org/html/2408.05398v1
 
 

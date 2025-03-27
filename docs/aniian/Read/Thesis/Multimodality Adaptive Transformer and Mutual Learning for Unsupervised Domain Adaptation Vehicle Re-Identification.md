@@ -1,4 +1,4 @@
-[[Multimodality_Adaptive_Transformer_and_Mutual_Learning_for_Unsupervised_Domain_Adaptation_Vehicle_Re-Identification.pdf]]
+Multimodality_Adaptive_Transformer_and_Mutual_Learning_for_Unsupervised_Domain_Adaptation_Vehicle_Re-Identification.pdf})
 
 
 *   **英文标题:** Multimodality Adaptive Transformer and Mutual Learning for Unsupervised Domain Adaptation Vehicle Re-Identification

@@ -1,7 +1,14 @@
 import { defineConfig } from 'vitepress'
 import { writeFileSync } from 'fs';
-import { resolve } from 'path'; // 确保引入 resolve
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
 import mathjax3 from 'markdown-it-mathjax3'
+import linkTransformPlugin from '../../plugins/link-transform.js'
+
+// ES模块中获取__dirname
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
 const customElements = [
   'math',
   'maction',
@@ -93,9 +100,33 @@ const customElements = [
 ];
 
 export default defineConfig({
-  base: '/',
-  title: "ANIIAN'S DIARY", // 网站标题
-  description: "Record the learning of relevant deep learning, Linux, shell, etc.", // 网站描述
+  // 站点配置
+  title: 'Aniian 笔记集',
+  description: '研究与学习笔记',
+  
+  // 重要：忽略死链接
+  ignoreDeadLinks: true,
+  
+  // 主题配置
+  themeConfig: {
+    // 导航栏
+    nav: [
+      { text: '首页', link: '/' },
+      { text: '笔记目录', link: '/directory' },
+      { text: '最近更新', link: '/recent' }
+    ],
+    
+    // 社交链接
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/你的用户名/MyVitePress' }
+    ],
+    
+    // 页脚
+    footer: {
+      message: '用 VitePress 构建',
+      copyright: `Copyright © ${new Date().getFullYear()}`
+    }
+  },
   markdown: {
     config: (md) => {
       md.use(mathjax3);
@@ -113,25 +144,28 @@ export default defineConfig({
   returnHome: true,  // 启用返回首页按钮
   sidebarCollapsible: true,  // 启用侧边栏折叠
   lastUpdated: true,
-  themeConfig: {
-    // 主题级选项
-    nav: [
-      { text: '首页', link: '/index' },
-      { text: "生活", link: "/learn-life/" },
-      { text: "算法", link: "/algorithm/" },
-      { text: "模型", link: "/model/" },
-      { text: "论文", link: "/paper/" },
-      { text: "理解深度学习", link: "/understanding/" },
-    ],
-    docFooter: {
-      prev: '上一页',
-      next: '下一页'
-    },
-
-  },
   buildEnd() {
     const cnamePath = resolve(__dirname, './dist/CNAME');
     writeFileSync(cnamePath, 'www.aniian.site');
     console.log('CNAME file has been created at:', cnamePath);
+  },
+  // 添加自定义路径别名
+  vite: {
+    resolve: {
+      alias: {
+        '/aniian/': resolve(__dirname, '../aniian/')
+      }
+    },
+    // 处理URL编码问题
+    server: {
+      fs: {
+        allow: [resolve(__dirname, '../')]
+      }
+    },
+    plugins: [linkTransformPlugin()]
+  },
+  // 自定义路由别名 - 修改为正确的格式
+  rewrites: {
+    '/books/:book/:chapter': '/aniian/Read/Book/:book/:chapter'
   }
 })

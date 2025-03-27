@@ -1,22 +1,22 @@
 [NotebookLM](https://notebooklm.google.com/)
-  1. [[Introduction  引言]]
-  2. [[Supervised learning 监督学习]]
-  3. [[Shallow neural networks 浅层神经网络]]
-  4. [[Deep neural networks 深度神经网络]]
-  5. [[Loss functions 损失函数]]
-  6. [[Fitting models 模型拟合]]
-  7. [[Gradients and initialization 梯度与初始化]]
-  8. [[Measuring performance 性能度量]]
-  9. [[Regularization 正则化]]
-  10. [[Convolutional networks 卷积网络]]
-  11. [[Residual networks 残差网络]]
-  12. [[Transformers 变换器 (Transformers)]]
-  13. [[Graph neural networks 图神经网络]]
-  14. [[Unsupervised learning 无监督学习]]
-  15. [[Generative Adversarial Networks 生成对抗网络]]
-  16. [[Normalizing flows 规范化流]]
-  17. [[Variational autoencoders 变分自编码器]]
-  18. [[Diffusion models 扩散模型]]
-  19. [[Reinforcement learning 强化学习]]
-  20. [[Why does deep learning work? 深度学习为什么有效？]]
-  21. [[Deep learning and ethics 深度学习与伦理]]
+  1. Introduction  引言})
+  2. Supervised learning 监督学习})
+  3. Shallow neural networks 浅层神经网络})
+  4. Deep neural networks 深度神经网络})
+  5. Loss functions 损失函数})
+  6. Fitting models 模型拟合})
+  7. Gradients and initialization 梯度与初始化})
+  8. Measuring performance 性能度量})
+  9. Regularization 正则化})
+  10. Convolutional networks 卷积网络})
+  11. Residual networks 残差网络})
+  12. Transformers 变换器 (Transformers)})
+  13. Graph neural networks 图神经网络})
+  14. Unsupervised learning 无监督学习})
+  15. Generative Adversarial Networks 生成对抗网络})
+  16. Normalizing flows 规范化流})
+  17. Variational autoencoders 变分自编码器})
+  18. Diffusion models 扩散模型})
+  19. Reinforcement learning 强化学习})
+  20. Why does deep learning work? 深度学习为什么有效？})
+  21. Deep learning and ethics 深度学习与伦理})

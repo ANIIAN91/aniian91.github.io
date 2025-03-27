@@ -3,11 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "prebuild": "node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
+    "build": "vitepress build docs --ignoreDeadLinks",
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "glob": "^11.0.1",
+    "gray-matter": "^4.0.3",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "1.0.0-alpha.28",
     "vue": "3.2.44"

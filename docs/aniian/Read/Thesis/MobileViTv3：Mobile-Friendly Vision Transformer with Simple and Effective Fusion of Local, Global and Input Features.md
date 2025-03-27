@@ -1,6 +1,6 @@
 [MobileViT、MobileViTv2、MobileViTv3学习笔记（自用）-CSDN博客](https://blog.csdn.net/weixin_44911037/article/details/127515858)
 [[2209.15159] MobileViTv3: Mobile-Friendly Vision Transformer with Simple and Effective Fusion of Local, Global and Input Features](https://arxiv.org/abs/2209.15159)
-[[2209.15159v2.pdf]]
+2209.15159v2.pdf})
 
 
 *   **英文标题:** MOBILEVITV3: MOBILE-FRIENDLY VISION TRANSFORMER with SIMPLE AND EFFECTIVE FUSION OF LOCAL, GLOBAL AND INPUT FEATURES

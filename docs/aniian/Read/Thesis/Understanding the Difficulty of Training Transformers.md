@@ -1,5 +1,5 @@
 - [[2004.08249] Understanding the Difficulty of Training Transformers](https://arxiv.org/abs/2004.08249)
-- [[2004.08249v3.pdf]]
+- 2004.08249v3.pdf})
 
 
 *   **英文标题:** Understanding the Difficulty of Training Transformers

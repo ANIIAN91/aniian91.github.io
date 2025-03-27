@@ -1,4 +1,4 @@
-[[nature14539.pdf]]
+nature14539.pdf})
 [Deep learning | Nature](https://www.nature.com/articles/nature14539)
 
 *   **英文标题:** Deep learning

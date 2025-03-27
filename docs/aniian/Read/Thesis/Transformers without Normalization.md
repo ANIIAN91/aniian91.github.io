@@ -1,6 +1,6 @@
 Paper: http://arxiv.org/abs/2503.10622 
 Code and website: http://jiachenzhu.github.io/DyT/
-[[2503.10622v1.pdf]]
+2503.10622v1.pdf})
 
 
 *   **英文标题：** Transformers without Normalization

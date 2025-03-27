@@ -1,6 +1,6 @@
 - [arxiv.org/pdf/2103.14030](https://arxiv.org/pdf/2103.14030)
 - ["Swin Transformer: Hierarchical Vision Transformer using Shifted Windows".](https://github.com/microsoft/Swin-Transformer)
-- [[../../docs/2103.14030v2.pdf]]
+- ../../docs/2103.14030v2.pdf})
 
 
 *   **英文标题:** Swin Transformer: Hierarchical Vision Transformer using Shifted Windows

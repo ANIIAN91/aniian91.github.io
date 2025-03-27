@@ -1,4 +1,4 @@
-- [[../../docs/Re-identification-for-long-term-tracking-and-management-o_2025_Biosystems-En.pdf|Re-identification-for-long-term-tracking-and-management-o_2025_Biosystems-En]]
+- Re-identification-for-long-term-tracking-and-management-o_2025_Biosystems-En})
 - [Re-identification for long-term tracking and management of health and welfare challenges in pigs - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S153751102500025X?via%3Dihub)
 
 **1. 英文标题:**  Re-identification for long-term tracking and management of health and welfare challenges in pigs

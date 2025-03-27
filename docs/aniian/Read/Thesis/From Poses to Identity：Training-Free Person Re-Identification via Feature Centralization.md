@@ -1,6 +1,6 @@
 - Paper: [https://arxiv.org/abs/2503.00938](https://arxiv.org/abs/2503.00938)
 - Code: [https://github.com/yuanc3/Pose2ID](https://github.com/yuanc3/Pose2ID)
-- [[../../docs/2503.00938v2.pdf]]
+- ../../docs/2503.00938v2.pdf})
 
 
 **论文标题:** From Poses to Identity: Training-Free Person Re-Identification via Feature Centralization

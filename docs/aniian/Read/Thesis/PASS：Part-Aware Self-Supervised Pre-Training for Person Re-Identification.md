@@ -1,6 +1,6 @@
 - [[2203.03931] PASS: Part-Aware Self-Supervised Pre-Training for Person Re-Identification](https://ar5iv.labs.arxiv.org/html/2203.03931#:~:text=In%20this%20paper%2C%20we%20propose%20a%20ReID-specific%20pre-training,to%20offer%20fine-grained%20information%20and%20is%20more%20s)
 - [CASIA-IVA-Lab/PASS-reID: [ECCV2022] PASS: Part-Aware Self-Supervised Pre-Training for Person Re-Identification](https://github.com/CASIA-IVA-Lab/PASS-reID?tab=readme-ov-file)
-- [[2203.03931v3.pdf]]
+- 2203.03931v3.pdf})
 
 
 

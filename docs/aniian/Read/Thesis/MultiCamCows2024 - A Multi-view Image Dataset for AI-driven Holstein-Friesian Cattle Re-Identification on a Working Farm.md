@@ -1,5 +1,5 @@
 **地址：**
-- [[../../docs/2410.12695v1.pdf]]
+- ../../docs/2410.12695v1.pdf})
 - [MultiCamCows2024 -- A Multi-view Image Dataset for AI-driven Holstein-Friesian Cattle Re-Identification on a Working Farm](https://arxiv.org/abs/2410.12695)
 - [MultiCamCows2024 - A multi-view image dataset for indoor Holstein-Friesian cow (re-)identification | MultiCamCows2024](https://phoenix4582.github.io/MultiCamCows2024.github.io/)
 

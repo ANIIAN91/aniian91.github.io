@@ -1,6 +1,6 @@
 ## 一、论文基本信息
 
-**文件**：[[../../docs/s11760-024-03344-5.pdf]]
+**文件**：../../docs/s11760-024-03344-5.pdf})
 **标题**：Improved sheep identification and tracking algorithm based on YOLOv5 + SORT methods 
 **期刊**：Signal, Image and Video Processing 
 **作者**：Cafer Tayyar Bati, Gazel Ser 

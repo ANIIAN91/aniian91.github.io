@@ -1,4 +1,4 @@
-[[../../docs/2002.04745v2.pdf]]
+../../docs/2002.04745v2.pdf})
 [[2002.04745] On Layer Normalization in the Transformer Architecture](https://arxiv.org/abs/2002.04745)
 
 **1. 英文标题(如果有):** On Layer Normalization in the Transformer Architecture

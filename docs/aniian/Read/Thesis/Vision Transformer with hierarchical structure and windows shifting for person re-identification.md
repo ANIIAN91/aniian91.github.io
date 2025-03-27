@@ -1,5 +1,5 @@
 - [Vision Transformer with hierarchical structure and windows shifting for person re-identification | PLOS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287979)
-- [[../../docs/journal.pone.0287979.pdf]]
+- ../../docs/journal.pone.0287979.pdf})
 
 
 **英文标题:** Vision Transformer with hierarchical structure and windows shifting for person re-identification

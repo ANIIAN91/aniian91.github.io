@@ -1,4 +1,4 @@
-[[../../docs/2006.02631v4 1.pdf]]
+../../docs/2006.02631v4 1.pdf})
 [arxiv.org/pdf/2006.02631](https://arxiv.org/pdf/2006.02631)
 [JDAI-CV/fast-reid: SOTA Re-identification Methods and Toolbox](https://github.com/JDAI-CV/fast-reid)
 

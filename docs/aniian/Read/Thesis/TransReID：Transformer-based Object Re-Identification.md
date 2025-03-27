@@ -1,6 +1,6 @@
 - [[2102.04378] TransReID: Transformer-based Object Re-Identification](https://arxiv.org/abs/2102.04378)
 - [damo-cv/TransReID: [ICCV-2021] TransReID: Transformer-based Object Re-Identification](https://github.com/damo-cv/TransReID)
-- [[../../docs/2102.04378v2.pdf]]
+- ../../docs/2102.04378v2.pdf})
 
 **1. 英文标题:** TransReID: Transformer-based Object Re-Identification
 **2. 中文标题:** TransReID: 基于Transformer的对象重识别

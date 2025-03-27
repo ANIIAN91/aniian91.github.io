@@ -1,5 +1,5 @@
 - [[2412.05602] Multispecies Animal Re-ID Using a Large Community-Curated Dataset](https://arxiv.org/abs/2412.05602)
-- [[../../docs/2412.05602v1.pdf]]
+- ../../docs/2412.05602v1.pdf})
 
 
 **标题** ：Multispecies Animal Re-ID Using a Large Community-Curated Dataset

@@ -2,13 +2,6 @@
 
 这里收集了我的研究笔记和学习资料。
 
-## 目录
-
-- [ReID 相关研究](/aniian/ReID/)
-- [Vision Transformer](/aniian/Vision Transformer/)
-- [数据传输相关](/aniian/Data Transfer/)
-- [阅读笔记](/aniian/Read/)
-
 **<span style="color: #4CAF50; font-size: 24px; font-weight: bold;">采菊东篱下，悠然见南山</span>**
 
 <div style="text-align: center; margin: 20px 0; padding: 10px; background-color: rgba(249, 249, 249, 0); border-radius: 8px;">

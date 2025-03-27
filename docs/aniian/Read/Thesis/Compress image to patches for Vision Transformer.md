@@ -1,4 +1,4 @@
-[[../../docs/2502.10120v1.pdf]]
+../../docs/2502.10120v1.pdf})
 https://arxiv.org/html/2502.10120v1
 
 **1. 英文标题:** Compress image to patches for Vision Transformer

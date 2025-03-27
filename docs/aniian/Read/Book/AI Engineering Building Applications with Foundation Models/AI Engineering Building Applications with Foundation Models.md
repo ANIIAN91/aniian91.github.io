@@ -1,11 +1,11 @@
 - [NotebookLM](https://notebooklm.google.com/)
-- [[第1章： 介绍使用基础模型构建AI应用]]
-- [[第2章： 理解基础模型]]
-- [[第3章： 评估AI系统的方法]]
-- [[第4章： 评估AI系统]]
-- [[第5章： 提示工程（Prompt Engineering）]]
-- [[第6章： 检索增强生成（RAG）与智能代理（Agents）]]
-- [[第7章： 微调（Finetuning）]]
-- [[第8章： 数据集工程 (Dataset Engineering)]]
-- [[第9章： 推理优化]]
-- [[第10章： AI工程架构和用户反馈]]
+- 第1章： 介绍使用基础模型构建AI应用})
+- 第2章： 理解基础模型})
+- 第3章： 评估AI系统的方法})
+- 第4章： 评估AI系统})
+- 第5章： 提示工程（Prompt Engineering）})
+- 第6章： 检索增强生成（RAG）与智能代理（Agents）})
+- 第7章： 微调（Finetuning）})
+- 第8章： 数据集工程 (Dataset Engineering)})
+- 第9章： 推理优化})
+- 第10章： AI工程架构和用户反馈})
