@@ -3,21 +3,22 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/handle-special-filenames.js && node scripts/fix-all-indexes.js && node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
+    "predev": "node scripts/emergency-fix.js && node scripts/handle-special-filenames.js && node scripts/fix-all-indexes.js && node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
     "dev": "vitepress dev docs",
-    "prebuild": "node scripts/handle-special-filenames.js && node scripts/fix-all-indexes.js && node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
+    "prebuild": "node scripts/emergency-fix.js && node scripts/handle-special-filenames.js && node scripts/fix-all-indexes.js && node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
     "build": "vitepress build docs --ignoreDeadLinks",
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
     "glob": "^11.0.1",
     "gray-matter": "^4.0.3",
-    "markdown-it-mathjax3": "^4.3.2"
+    "markdown-it-mathjax3": "^4.3.2",
+    "@vitejs/plugin-vue": "^4.2.3"
   },
   "dependencies": {
-    "vue": "^3.3.0",
-    "@vueuse/core": "^10.0.0",
-    "vitepress": "^1.0.0"
+    "vue": "^3.2.47",
+    "@vueuse/core": "^9.13.0",
+    "vitepress": "^1.0.0-alpha.75"
   },
   "pnpm": {
     "peerDependencyRules": {

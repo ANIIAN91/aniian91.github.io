@@ -100,32 +100,18 @@ const customElements = [
 ];
 
 export default defineConfig({
-  // 站点配置
   title: 'Aniian 笔记集',
-  description: '研究与学习笔记',
+  description: '个人研究笔记和学习资料',
+  ignoreDeadLinks: true, // 忽略死链接
   
-  // 重要：忽略死链接
-  ignoreDeadLinks: true,
-  
-  // 主题配置
+  // 简化导航
   themeConfig: {
-    // 导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '笔记目录', link: '/directory' },
-      { text: '最近更新', link: '/recent' }
+      { text: '目录', link: '/directory' }
     ],
     
-    // 社交链接
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/你的用户名/MyVitePress' }
-    ],
-    
-    // 页脚
-    footer: {
-      message: '用 VitePress 构建',
-      copyright: `Copyright © ${new Date().getFullYear()}`
-    }
+    sidebar: 'auto'
   },
   markdown: {
     config: (md) => {
