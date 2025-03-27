@@ -13,8 +13,12 @@
     "glob": "^11.0.1",
     "gray-matter": "^4.0.3",
     "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "1.0.0-alpha.28",
-    "vue": "3.2.44"
+    "vitepress": "1.0.0-alpha.28"
+  },
+  "dependencies": {
+    "vue": "^3.3.0",
+    "@vueuse/core": "^10.0.0",
+    "vitepress": "^1.0.0"
   },
   "pnpm": {
     "peerDependencyRules": {
