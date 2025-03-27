@@ -53,10 +53,11 @@ function generateDirectoryMarkdown(dir, basePath = '', level = 0) {
         
         const relativePath = `/aniian/${itemPath}`
           .replace(/\\/g, '/')  
-          .replace(/\.md$/, '') 
-        
+          .replace(/\.md$/, '')
+          .replace(/\s+/g, '-'); // 将空格替换为连字符
+
         const encodedPath = relativePath.split('/')
-          .map(part => encodeURIComponent(part))
+          .map(part => encodeURIComponent(part.replace(/\s+/g, '-'))) // 确保所有部分都没有空格
           .join('/')
         
         result += `${indent}<div class="file-item">${indent}- <a href="${encodedPath}" class="file-link">${fileTitle}</a></div>\n`
