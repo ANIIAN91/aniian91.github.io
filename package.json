@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/handle-special-filenames.js && node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
+    "predev": "node scripts/handle-special-filenames.js && node scripts/clean-vitepress-temp.js && node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
     "dev": "vitepress dev docs",
-    "prebuild": "node scripts/handle-special-filenames.js && node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
+    "prebuild": "node scripts/handle-special-filenames.js && node scripts/clean-vitepress-temp.js && node scripts/clean-directory.js && node scripts/process-obsidian.js && node scripts/generate-directory.js",
     "build": "vitepress build docs --ignoreDeadLinks",
     "serve": "vitepress serve docs"
   },
